@@ -5,6 +5,7 @@
 late var variableLate; //! Gunakan ketika yakin bahwa inisialisasi pasti akan dilakukan sebelum digunakan
 
 void main(List<String> args) {
+  //! Dalam main dibaca sekuensial , sehingga posisi fungsi dalam main berpengaruh
   //* Keyword Late harus diikuti dengan const, final, var , typename
   //* late + var 
   variableLate = "Ini variable late yang diletak diluar main"; //!skema yang sama tidak bisa dilakukan ketika variable late dalam main
@@ -28,5 +29,15 @@ void main(List<String> args) {
     finalLate[1] = 100;
     print(finalLate);
 
+    //* Studi kasus late
+    late var value = getValue();
+    print("Variable telah dibuat");
+    print(value);
   //*Testing Runtime Error
 }
+
+    String getValue()
+    {
+        print("GetValue dipanggil");
+        return "Alfonsus Setiawan Jacub";
+    }
