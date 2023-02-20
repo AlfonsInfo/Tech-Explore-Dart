@@ -1,0 +1,5 @@
+1. Dart butuh SDK untuk di run
+2. Untuk create project -> Dart create nama_project
+3. bin tempat kita menulis program
+4. kita perlu membuat main function
+5. dart run directory
