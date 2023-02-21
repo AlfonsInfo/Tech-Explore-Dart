@@ -1,15 +1,15 @@
 import 'dart:io';
 
 class Karyawan{
-String noKar = '00000';
-String namaKar = 'Tebak saya siapa ?';
-Karyawan(this.noKar , this.namaKar);
+  String noKar = '00000';
+  String namaKar = 'Tebak saya siapa ?';
+  Karyawan(this.noKar , this.namaKar);
 
-void printData()
-{
-  print('nomor karaywan $noKar');
-  print('nama karaywan $namaKar');  
-}
+  void printData()
+  {
+    print('nomor karaywan $noKar');
+    print('nama karaywan $namaKar');  
+  }
 }
 
 class Kasir extends Karyawan{
@@ -20,6 +20,13 @@ class Kasir extends Karyawan{
     super.printData();
     print(jadwalShift);
   }
+    // Kasir(String noKar , String namaKar, String jadwalShift){
+      // super(noKar,namaKar);
+      // this.jadwalShift = jadwalShift;
+    // }
+  // Kasir.javaStyle(String noKar, String namaKar,string jadwalShidt){
+  //   this.noKar = 
+  // } //* Implicitly invoked 
 }
 
 void main()

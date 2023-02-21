@@ -47,7 +47,7 @@ void main()
   mtr.turnOff();
   print(mtr.noPlat); //* Variable yang dioverride
   // print(b.kapasitas); //! Tidak bisa ditampung
-
+  
 
 
 }
