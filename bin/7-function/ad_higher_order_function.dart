@@ -1,3 +1,9 @@
+//* A higher order function
+//* is a function that takes one or more function as arguments
+//* or returns a function as its result
+//* its possible because function treated as object 
+//*
+
 String filterBadWord(String name)
 {
   if(name == "gila"){
@@ -30,4 +36,12 @@ void main()
   printName('alfons', (String name){
     return name.toUpperCase();
   });
+  test(()=> 'ayam');
+}
+
+
+void test(String wow() )
+{
+  print(wow());
+  print('test');
 }
