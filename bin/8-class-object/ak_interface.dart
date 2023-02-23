@@ -11,7 +11,7 @@ abstract class HasBrand{
 
 }
 
-class Avanza implements Car {
+class Avanza implements Car , HasBrand{
   String noPlat = 'this notPlat';
 
   
